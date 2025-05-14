@@ -11860,22 +11860,22 @@ textarea.form-control-lg {
 }
 
 .nav-link {
-  color: rgb(212, 185, 32);
+  color: #DCB253;
 }
 
 .btn {
-  color: rgb(212, 185, 32);
-  border-color: rgb(212, 185, 32);
+  color: #DCB253;
+  border-color: #DCB253;
 }
 
 .btn:hover {
   color: white;
-  background-color: rgb(212, 185, 32);
-  border-color: rgb(212, 185, 32);
+  background-color: #DCB253;
+  border-color: #DCB253;
 }
 
 .nav-link:hover {
-  color: rgb(212, 185, 32);
+  color: #DCB253;
 }
 
 .container {
@@ -11884,6 +11884,10 @@ textarea.form-control-lg {
   width: 100vw;
   justify-content: center;
   align-items: center;
+}
+.container h1, .container .h1 {
+  color: #DCB253;
+  margin-bottom: 20px;
 }
 
 #carouselExample {
@@ -11897,8 +11901,8 @@ textarea.form-control-lg {
   padding: 40px;
 }
 .accordion .accordion-button {
-  background-color: rgb(212, 185, 32);
-  border-color: rgb(212, 185, 32);
+  background-color: #DCB253;
+  border-color: #DCB253;
   color: white;
 }
 
@@ -11907,7 +11911,7 @@ textarea.form-control-lg {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  border-color: rgb(212, 185, 32);
+  border-color: #DCB253;
 }
 .card img {
   height: 500px;
@@ -11930,14 +11934,42 @@ textarea.form-control-lg {
 .mapcontainer .mb-3 {
   margin-top: 40px;
   width: 1000px;
-  color: rgb(212, 185, 32);
+  color: #DCB253;
   font-size: 30px;
 }
 .mapcontainer button {
-  background-color: rgb(212, 185, 32);
+  background-color: #DCB253;
   color: white;
   font-weight: 600;
   padding: 10px 20px;
   border: none;
   border-radius: 20px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  background-color: #DCB253;
+}
+.footer .coordonnees {
+  display: flex;
+  flex-direction: column;
+}
+.footer .coordonnees h2, .footer .coordonnees .h2 {
+  color: white;
+  text-align: left;
+}
+.footer .coordonnees p {
+  color: white;
+  text-align: left;
+}
+.footer .sociaux {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .sociaux img {
+  width: 50px;
+  height: 50px;
 }

@@ -1,4 +1,4 @@
-$gold: rgb(212, 185, 32);
+$gold: #DCB253;
 $padding: 40px;
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
@@ -31,6 +31,10 @@ $padding: 40px;
     width: 100vw;
     justify-content: center;
     align-items: center;
+    h1{
+        color: $gold;
+        margin-bottom: 20px;
+    }
 }
 
 #carouselExample{
@@ -86,5 +90,33 @@ $padding: 40px;
         padding: 10px 20px;
         border: none;
         border-radius: 20px;
+    }
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    background-color: $gold;
+    .coordonnees{ 
+        display: flex; 
+        flex-direction: column;
+        h2{
+            color: white;
+            text-align: left;
+        }
+        p{
+            color: white;
+            text-align: left;
+        }
+    }
+    .sociaux{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 50px;
+            height: 50px;
+        }
     }
 }
