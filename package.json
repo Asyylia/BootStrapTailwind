@@ -1,0 +1,15 @@
+{
+  "name": "bootstrap-tailwind",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Morgane Mezzarobba",
+  "license": "ISC",
+  "description": "Using Boostrap with Tailwind for learning",
+  "dependencies": {
+    "bootstrap": "^5.3.6"
+  }
+}
