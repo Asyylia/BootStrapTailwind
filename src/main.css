@@ -4,6 +4,7 @@
  * Copyright 2011-2025 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap");
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -11857,10 +11858,15 @@ textarea.form-control-lg {
 * {
   margin: 0;
   padding: 0;
+  font-family: "Instrument Sans" !important;
 }
 
 .nav-link {
   color: #DCB253;
+}
+
+h1, .h1 {
+  font-size: 50px;
 }
 
 .btn {
@@ -11887,34 +11893,95 @@ textarea.form-control-lg {
 }
 .container h1, .container .h1 {
   color: #DCB253;
-  margin-bottom: 20px;
+  margin: 50px;
+  font-size: 60px;
 }
 
 #carouselExample {
-  width: 100vw;
+  height: 750px;
 }
 #carouselExample .carousel-item {
-  height: 1000px;
+  width: 100vw;
+  height: 750px;
 }
 
+@media screen and (max-width: 1000px) {
+  h1, .h1 {
+    font-size: 35px !important;
+    text-align: center;
+  }
+  #carouselExample {
+    height: 30vh;
+  }
+  #carouselExample .carousel-item {
+    height: 200px;
+  }
+  .accordion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+  }
+  .accordion .accordion-button {
+    width: 80vw !important;
+  }
+  .maps {
+    width: 80vw !important;
+  }
+  .mb-3 {
+    width: 80vw !important;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+  }
+  .cards .card {
+    display: flex;
+    width: 80vw !important;
+    align-items: center;
+    justify-content: center;
+  }
+  .cards .card .card-body {
+    width: 80vw !important;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .accordion {
   padding: 40px;
+}
+.accordion strong {
+  font-weight: 400;
 }
 .accordion .accordion-button {
   background-color: #DCB253;
   border-color: #DCB253;
   color: white;
+  width: 1300px;
 }
 
-.card {
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.cards .card {
+  margin-top: 40px;
   width: 750px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   border-color: #DCB253;
+  box-shadow: 10px 5px 20px;
 }
-.card img {
-  height: 500px;
+.cards .card img {
+  height: 450px;
+  width: 300px;
 }
 
 .mapcontainer {
@@ -11930,6 +11997,8 @@ textarea.form-control-lg {
 }
 .mapcontainer .maps {
   width: 1000px;
+  border-radius: 20px;
+  box-shadow: 10px 5px 20px;
 }
 .mapcontainer .mb-3 {
   margin-top: 40px;
@@ -11937,7 +12006,7 @@ textarea.form-control-lg {
   color: #DCB253;
   font-size: 30px;
 }
-.mapcontainer button {
+.mapcontainer #bouton {
   background-color: #DCB253;
   color: white;
   font-weight: 600;
@@ -11953,6 +12022,7 @@ textarea.form-control-lg {
   background-color: #DCB253;
 }
 .footer .coordonnees {
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
 }

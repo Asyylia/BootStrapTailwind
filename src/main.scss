@@ -1,17 +1,25 @@
 $gold: #DCB253;
 $padding: 40px;
+$police: "Instrument Sans";
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
-
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
 *{
     margin: 0;
     padding: 0;
+    font-family: $police !important;
 }
 
 .nav-link{
     color: $gold;
 
 }    
+
+h1{
+    font-size: 50px;
+}
+
+
 .btn{
     color: $gold;
     border-color: $gold;
@@ -33,37 +41,100 @@ $padding: 40px;
     align-items: center;
     h1{
         color: $gold;
-        margin-bottom: 20px;
+        margin: 50px;
+        font-size: 60px;
     }
 }
 
 #carouselExample{
-    width: 100vw;
+    height: 750px;
     .carousel-item{
-        height: 1000px;
+        width: 100vw;
+        height:750px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    h1{
+        font-size: 35px !important;
+        text-align: center;
+    }
+    #carouselExample{
+        height: 30vh;
+        .carousel-item{
+            height: 200px;
+        }
+    }
+    .accordion{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 70vw;
+    .accordion-button{
+        width: 80vw !important;
+    }
+}
+    .maps{
+        width: 80vw !important;
+    }
+    .mb-3{
+        width: 80vw !important;
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        .card{
+            display: flex;
+            width: 80vw !important;
+            align-items: center;
+            justify-content: center;
+            .card-body{
+                width: 80vw !important;
+                align-items: center;
+                justify-content: center;
+            }
+        }
     }
 }
 
 .accordion{
     padding: $padding;
+        strong{
+        font-weight: 400;
+    }
     .accordion-button{
         background-color: $gold;
         border-color: $gold;
         color: white;
+        width: 1300px;
+
     }
 }
 
+
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 .card{
+    margin-top: 40px;
     width: 750px;
     display: inline-flex;        
     justify-content: center;
     align-items: center;
     border-color: $gold;
+    box-shadow: 10px 5px 20px;
     img{
-        height: 500px;
+        height: 450px;
+        width: 300px;
     }
 }
-
+}
 .mapcontainer{
     padding: 40px;
     display: flex;
@@ -76,14 +147,17 @@ $padding: 40px;
     }
     .maps{
         width: 1000px;
+        border-radius: 20px;
+        box-shadow: 10px 5px 20px;
     }
     .mb-3{
         margin-top: 40px;
         width: 1000px;
         color: $gold;
         font-size: 30px;
+
     }
-    button{
+    #bouton{
         background-color: $gold;
         color: white;
         font-weight: 600;
@@ -99,6 +173,7 @@ $padding: 40px;
     margin-top: 50px;
     background-color: $gold;
     .coordonnees{ 
+        margin-top: 30px;
         display: flex; 
         flex-direction: column;
         h2{
