@@ -11854,3 +11854,90 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  color: rgb(212, 185, 32);
+}
+
+.btn {
+  color: rgb(212, 185, 32);
+  border-color: rgb(212, 185, 32);
+}
+
+.btn:hover {
+  color: white;
+  background-color: rgb(212, 185, 32);
+  border-color: rgb(212, 185, 32);
+}
+
+.nav-link:hover {
+  color: rgb(212, 185, 32);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+#carouselExample {
+  width: 100vw;
+}
+#carouselExample .carousel-item {
+  height: 1000px;
+}
+
+.accordion {
+  padding: 40px;
+}
+.accordion .accordion-button {
+  background-color: rgb(212, 185, 32);
+  border-color: rgb(212, 185, 32);
+  color: white;
+}
+
+.card {
+  width: 750px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-color: rgb(212, 185, 32);
+}
+.card img {
+  height: 500px;
+}
+
+.mapcontainer {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mapcontainer h1, .mapcontainer .h1 {
+  padding: 40px;
+  font-size: 45px;
+}
+.mapcontainer .maps {
+  width: 1000px;
+}
+.mapcontainer .mb-3 {
+  margin-top: 40px;
+  width: 1000px;
+  color: rgb(212, 185, 32);
+  font-size: 30px;
+}
+.mapcontainer button {
+  background-color: rgb(212, 185, 32);
+  color: white;
+  font-weight: 600;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+}

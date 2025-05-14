@@ -1,1 +1,90 @@
-@import "../node_modules/bootstrap/scss/bootstrap.scss"
+$gold: rgb(212, 185, 32);
+$padding: 40px;
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link{
+    color: $gold;
+
+}    
+.btn{
+    color: $gold;
+    border-color: $gold;
+}
+.btn:hover{
+    color: white;
+    background-color: $gold;
+    border-color: $gold;
+}
+.nav-link:hover{
+    color: $gold;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+#carouselExample{
+    width: 100vw;
+    .carousel-item{
+        height: 1000px;
+    }
+}
+
+.accordion{
+    padding: $padding;
+    .accordion-button{
+        background-color: $gold;
+        border-color: $gold;
+        color: white;
+    }
+}
+
+.card{
+    width: 750px;
+    display: inline-flex;        
+    justify-content: center;
+    align-items: center;
+    border-color: $gold;
+    img{
+        height: 500px;
+    }
+}
+
+.mapcontainer{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1{
+        padding: 40px;
+        font-size: 45px;
+    }
+    .maps{
+        width: 1000px;
+    }
+    .mb-3{
+        margin-top: 40px;
+        width: 1000px;
+        color: $gold;
+        font-size: 30px;
+    }
+    button{
+        background-color: $gold;
+        color: white;
+        font-weight: 600;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 20px;
+    }
+}
